@@ -1,0 +1,100 @@
+/* 
+<body>
+    <form id="note-form">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title">
+        <label for="content">Content</label>
+        <textarea id="content" name="content"></textarea>
+        <button type="submit">Add Note</button>
+      </form>
+      <table id="note-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+#note-form{
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+#note-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#note-form input[type="text"],
+#note-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#note-form button[type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#note-table{
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+#note-table thead{
+    background-color: #333;
+    color: #fff;
+}
+
+#note-table thead th{
+    padding: 10px;
+}
+
+#note-table tbody td{
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#note-table tbody td:last-child{
+    text-align: center;
+}
+
+#note-table tbody td:last-child button{
+    padding: 5px 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#note-table tbody td:last-child button:hover{
+    background-color: #0f0e0e;
+}
+
